@@ -1,0 +1,5 @@
+Model,Total Questions,Successful Responses,Correct,Incorrect,API Errors,Accuracy (%),Average Clarity (1-5),Average Response Time (sec)
+GPT-4o mini,50,50,50,0,0,100.0,4.68,1.03
+o3-mini,50,50,50,0,0,100.0,4.82,2.13
+DeepSeek-R1,50,50,50,0,0,100.0,3.28,23.52
+GPT-OSS-20B,50,50,49,1,0,98.0,4.46,0.47

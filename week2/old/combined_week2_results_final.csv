@@ -1,0 +1,861 @@
+question,response,response_time,Model,Question No,Question Type,Model Type,Expected Answer,Correct,Answer Quality (1-5),Reasoning Quality (1-5)
+What is 15% of 240?,"To find 15% of 240, you can multiply 240 by 0.15:
+
+\[
+240 \times 0.15 = 36
+\]
+
+So, 15% of 240 is 36.",2.95,GPT-4o mini,1,Math,Instruct,36,Correct,5,
+What is the capital of France?,The capital of France is Paris.,1.1,GPT-4o mini,2,General Knowledge,Instruct,Paris,Correct,5,
+Explain photosynthesis in simple words.,"Photosynthesis is the process that plants use to make their food. Here's how it works in simple terms:
+
+1. **Sunlight**: Plants take in sunlight through their leaves.
+2. **Air**: They absorb carbon dioxide from the air.
+3. **Water**: Plants take in water through their roots from the soil.
+
+Using sunlight, plants mix carbon dioxide and water to create glucose (a type of sugar) and oxygen. The glucose is used for energy and growth, while the oxygen is released into the air, which is great for us to breathe! So, photosynthesis helps plants live and also provides oxygen for other living things.",1.59,GPT-4o mini,3,Explanation,Instruct,"Plants use sunlight, carbon dioxide, and water to make food and release oxygen.",Correct,5,
+Write a Python function to calculate the factorial of a number.,"Certainly! Here’s a Python function that calculates the factorial of a number using a recursive approach:
+
+```python
+def factorial(n):
+    """"""Calculate the factorial of a non-negative integer n.""""""
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Example usage:
+print(factorial(5))  # Output: 120
+```
+
+Alternatively, you can use an iterative approach:
+
+```python
+def factorial(n):
+    """"""Calculate the factorial of a non-negative integer n.""""""
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+# Example usage:
+print(factorial(5))  # Output: 120
+```
+
+Both implementations will correctly compute the factorial of a non-negative integer. You can choose either depending on your preference for recursion or iteration.",3.03,GPT-4o mini,4,Coding,Instruct,A Python function that calculates the factorial of a number.,Correct,5,
+What is the difference between RAM and ROM?,"RAM (Random Access Memory) and ROM (Read-Only Memory) are both crucial types of memory used in computers and other electronic devices, but they serve different purposes and have distinct characteristics:
+
+### RAM (Random Access Memory):
+- **Volatility**: RAM is volatile, meaning it loses its data when power is turned off.
+- **Purpose**: It is used for temporary storage while a computer is running, allowing for quick read and write access to data actively in use.
+- **Read/Write Ability**: Data can be read and written onto RAM easily, which enables the operating system and applications to run smoothly.
+- **Speed**: RAM is much faster than ROM, allowing for quick access to data and instructions.
+- **Capacity**: Typically larger in capacity compared to ROM, with modern systems commonly equipped with several gigabytes of RAM.
+
+### ROM (Read-Only Memory):
+- **Non-volatility**: ROM is non-volatile, meaning it retains its data even when the power is turned off.
+- **Purpose**: It is used to store firmware, which is essential software that initializes hardware at startup and runs basic system functions.
+- **Read/Write Ability**: Traditionally, data in ROM is not easily modified or written over (hence ""read-only""), although some modern types (like EEPROM and flash memory) allow for limited writing.
+- **Speed**: ROM is slower than RAM in terms of data access.
+- **Capacity**: Usually smaller in size compared to RAM since it primarily holds firmware and essential instructions.
+
+In summary, RAM is fast, temporary memory that helps with active processes, while ROM is slower, non-volatile memory used for permanent storage of critical system instructions.",3.66,GPT-4o mini,5,Conceptual,Instruct,"RAM is temporary memory, while ROM is permanent memory.",Correct,5,
+"If a train travels 60 km in 2 hours, what is its average speed?","To find the average speed, you can use the formula:
+
+\[
+\text{Average Speed} = \frac{\text{Total Distance}}{\text{Total Time}}
+\]
+
+In this case, the total distance is 60 km and the total time is 2 hours.
+
+\[
+\text{Average Speed} = \frac{60 \text{ km}}{2 \text{ hours}} = 30 \text{ km/h}
+\]
+
+So, the average speed of the train is 30 km/h.",1.87,GPT-4o mini,6,Math,Instruct,30 km/h,Correct,5,
+Summarize the importance of teamwork in a workplace.,"Teamwork is essential in the workplace for several reasons:
+
+1. **Enhanced Collaboration**: Teamwork fosters collaboration, allowing diverse skill sets and perspectives to contribute to problem-solving and innovation.
+
+2. **Increased Efficiency**: Working together enables task delegation, which can lead to faster completion of projects and improved productivity.
+
+3. **Shared Knowledge**: Team members can share expertise and insights, leading to better decision-making and continuous learning within the group.
+
+4. **Support and Motivation**: A strong team provides emotional support, boosting morale and motivation among members, which can enhance job satisfaction and reduce burnout.
+
+5. **Conflict Resolution**: Teams can navigate conflicts constructively, leading to better relationships and a more harmonious work environment.
+
+6. **Goal Alignment**: Teamwork ensures that everyone is aligned with common objectives, promoting a unified approach towards achieving organizational goals.
+
+Overall, effective teamwork can lead to higher performance, greater creativity, and a positive workplace culture.",2.84,GPT-4o mini,7,Summary,Instruct,"Teamwork helps employees collaborate, communicate, and achieve common goals.",Correct,5,
+What are the main advantages of using cloud computing?,"Cloud computing offers several significant advantages, including:
+
+1. **Cost Efficiency**:
+   - Reduces the need for physical hardware and infrastructure, leading to lower capital expenditures.
+   - Operates on a pay-as-you-go model, allowing businesses to pay only for the resources they use.
+
+2. **Scalability**:
+   - Easily scale resources up or down based on demand, accommodating growth without over-investment.
+   - Provides flexibility to adapt quickly to changing business needs.
+
+3. **Accessibility**:
+   - Enables access to data and applications from anywhere with an internet connection, facilitating remote work and collaboration.
+   - Supports multiple devices and platforms.
+
+4. **Reliability**:
+   - Offers robust backup and disaster recovery options, ensuring data is protected and available.
+   - Often includes built-in data redundancy across multiple geographic locations.
+
+5. **Performance and Speed**:
+   - Access to high-performance computing resources and the latest technology without needing in-house upgrades.
+   - Fast deployment of applications and services.
+
+6. **Automatic Updates**:
+   - Providers handle software updates, security patches, and maintenance, reducing the burden on IT staff.
+   - Ensures the latest features and security protocols are always in place.
+
+7. **Security**:
+   - Many cloud providers offer advanced security measures, including encryption, identity management, and compliance certifications.
+   - Dedicated teams focus on cybersecurity, often providing a level of protection difficult for individual organizations to match.
+
+8. **Environmental Impact**:
+   - Promotes energy efficiency by optimizing resource use and reducing the number of physical servers needed.
+   - Cloud providers often use green technologies and renewable energy sources.
+
+9. **Collaboration**:
+   - Enhances teamwork via shared resources and tools, allowing multiple users to work on projects simultaneously in real-time.
+   - Facilitates communication and project management through integrated platforms.
+
+10. **Innovation**:
+    - Provides access to cutting-edge technologies, such as AI and machine learning, enabling businesses to innovate faster and more effectively.
+
+Using cloud computing can transform how organizations operate, enabling them to be more agile, competitive, and responsive to market demands.",4.09,GPT-4o mini,8,General Knowledge,Instruct,"Cloud computing provides flexible, scalable, and cost-effective access to computing resources.",Correct,5,
+Write a Python function to check whether a number is even or odd.,"Certainly! Here’s a simple Python function that checks whether a number is even or odd:
+
+```python
+def is_even_or_odd(number):
+    if number % 2 == 0:
+        return ""Even""
+    else:
+        return ""Odd""
+
+# Example usage:
+num = 10
+result = is_even_or_odd(num)
+print(f""The number {num} is {result}."")
+```
+
+You can call this function with any integer to determine if it's even or odd.",1.82,GPT-4o mini,9,Coding,Instruct,A Python function that checks whether a number is divisible by 2.,Correct,5,
+What is the largest planet in our solar system?,"The largest planet in our solar system is Jupiter. It is a gas giant with a diameter of about 86,881 miles (139,822 kilometers) and is known for its Great Red Spot, a massive storm, and its numerous moons.",1.07,GPT-4o mini,10,General Knowledge,Instruct,Jupiter,Correct,5,
+What is 15% of 240?,"
+To find 15% of 240, recognize that ""percent"" means per hundred. Therefore, 15% is equivalent to 15/100 or 0.15.
+
+Multiply 240 by 0.15 to get the result:  
+240 × 0.15 = 36.
+
+Alternatively, break down the percentage:  
+- 10% of 240 is 24 (since 240 × 0.10 = 24).  
+- 5% of 240 is half of 10%, so 24 ÷ 2 = 12.  
+- Adding these gives 15%: 24 + 12 = 36.
+
+Thus, 15% of 240 is 36.",40.75,DeepSeek-R1,1,Math,Thinking,36,Correct,5,5
+What is the capital of France?,"
+The capital of France is **Paris**.
+
+It has been the political, economic, and cultural heart of France for centuries. Famous landmarks like the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum are located there.
+
+Is there anything else you'd like to know about France or Paris?",16.36,DeepSeek-R1,2,General Knowledge,Thinking,Paris,Correct,4,4
+Explain photosynthesis in simple words.,"<think>
+Okay, the user asked me to explain photosynthesis in simple words. Let me start by understanding who might be asking this. It could be a student, maybe a younger one, or someone without a science background. They want a straightforward explanation without jargon.
+
+First, I need to break down the process step by step. Photosynthesis involves plants using sunlight to make food. But how to make it relatable? Using everyday terms like ""recipe"" or ""kitchen"" might help. Plants need sunlight, water, and air—specifically carbon dioxide. 
+
+I should mention chlorophyll—that's the green pigment. Maybe compare it to a solar panel to make it visual. Then explain how water comes from the roots and CO2 from the air. The output is sugar (food) and oxygen. Emphasize that oxygen is a byproduct, which is crucial for humans and animals.
+
+Wait, the user might not know what byproduct means. So rephrase that as ""leftover"" or something simpler. Also, highlight the importance: plants make their own food and produce oxygen we breathe. Connecting it to their life makes it relevant.
+
+Avoid technical terms like glucose or stomata. Keep it to sugar and air holes. Check if the explanation flows: ingredients, process (using sunlight), and products. End with why it matters—food chain and oxygen. Make sure it's concise
+Photosynthesis is how **plants make their own food** using sunlight. Here's the simple breakdown:
+
+1.  **Plants gather ingredients:** They take in:
+    *   **Sunlight** (energy from the sun).
+    *   **Water** (from the soil through their roots).
+    *   **Carbon Dioxide (CO₂)** (a gas from the air through tiny holes in their leaves).
+
+2.  **The magic happens:** Inside special green parts of the plant (mostly leaves), a green pigment called **chlorophyll** catches the sunlight. This sunlight energy powers a reaction that mixes the water and carbon dioxide together.
+
+3.  **Plants make food and oxygen:** This reaction creates:
+    *   **Sugar (Food):** This is the plant's energy source to grow and stay alive.
+    *   **Oxygen (O₂):** This gas is released into the air as a leftover.
+
+**Think of it like a recipe:**
+
+*   **Ingredients:** Sunlight + Water + Carbon Dioxide
+*   **Chef:** Chlorophyll (using sunlight like an oven)
+*   **Products:** Sugar (plant food) + Oxygen (what we breathe!)
+
+**Why it's super important:**
+
+*   **Plants eat:** It's how plants feed themselves.
+*   **We breathe:** Plants release the oxygen that animals and humans need to breathe.
+*   **Food chain:** Plants are the base of almost all food chains – they feed animals, which feed other animals (and us!).
+
+**In super simple words:** Plants use sunlight to turn water and air into their food and the oxygen we breathe.",23.88,DeepSeek-R1,3,Explanation,Thinking,"Plants use sunlight, carbon dioxide, and water to make food and release oxygen.",Correct,4,4
+Write a Python function to calculate the factorial of a number.,"<think>
+We are going to write a function to calculate the factorial of a non-negative integer.
+ The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
+ It is denoted by n! and by convention, 0! = 1.
+ We can implement this using recursion or iteration. However, recursion might hit recursion limits for large n.
+ Alternatively, we can use an iterative approach (loop) which is
+To calculate the factorial of a non-negative integer, we can use an iterative approach. The factorial of a number `n` (denoted as `n!`) is the product of all positive integers less than or equal to `n`. By convention, the factorial of 0 is 1. 
+
+Here's the step-by-step solution:
+1. **Check for negative numbers**: Factorial is not defined for negative numbers, so raise a `ValueError` if the input is negative.
+2. **Handle edge case**: Return 1 if the input is 0.
+3. **Iterative multiplication**: For positive integers, multiply all integers from 1 up to `n` using a loop.
+
+```python
+def factorial(n):
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+```
+
+**Explanation**:
+- **Input Validation**: The function first checks if `n` is negative and raises a `ValueError` if true.
+- **Base Case**: If `n` is 0, the loop doesn't run (since `range(1, 0+1)` is empty), and the function returns 1.
+- **Iterative Calculation**: For positive `n`, the loop multiplies all integers from 1 to `n` inclusive, storing the result.
+
+**Example Usage**:
+```python
+print(factorial(0))   # Output: 1
+print(factorial(5))   # Output: 120
+print(factorial(10))  # Output: 3628800
+```
+
+This approach efficiently computes the factorial using a simple loop, ensuring correctness for valid inputs and proper error handling for invalid ones.",14.94,DeepSeek-R1,4,Coding,Thinking,A Python function that calculates the factorial of a number.,Correct,5,5
+What is the difference between RAM and ROM?,"<think>
+Okay, the user is asking about the difference between RAM and ROM. Let me start by recalling the basics. Both are types of memory, but they serve different purposes. RAM is volatile, meaning it loses data when power is off, while ROM is non-volatile and retains data without power. That's the fundamental distinction.
+
+Now, why would someone ask this? Maybe they're a student studying computer science, a hobbyist building a PC, or someone troubleshooting their device. Understanding RAM vs. ROM helps in grasping how computers store and access data. The user might need this for academic purposes, upgrading their hardware, or solving a tech issue.
+
+Looking deeper, the user might not just want definitions but practical implications. For example, how RAM affects system speed versus ROM's role in booting up. They might be confused about why both are necessary. I should explain their roles in a computer system—RAM for active tasks, ROM for firmware.
+
+I should cover key differences: volatility, purpose, speed, capacity, and rewritability. Mentioning examples like DRAM/SRAM for RAM and PROM/EPROM for ROM adds context. Also, highlighting that RAM is larger and faster, while ROM is smaller and permanent. 
+
+Need to ensure clarity without jargon. Avoid assuming prior knowledge but keep it concise. Maybe include a real-world analogy, like RAM as a workspace and ROM as an instruction manual. That could help solidify the concepts. 
+
+Also, touch on modern uses. ROM isn't just old tech; it's in BIOS/UEFI, firmware in devices. RAM's role in multitasking and gaming performance. This shows relevance today. 
+
+Check if there are common misconceptions. Like, some might think ROM is entirely unchangeable, but types like EEPROM allow updates. Clarify that while ROM is read-only typically, some forms can be modified, albeit slowly. 
+
+Summarize with a table for quick reference. Emphasize that both are crucial but serve different functions. Conclude by reinforcing how they interact in a system—ROM boots up, RAM handles active processes. That should cover the user's needs and any underlying questions they
+RAM (Random Access Memory) and ROM (Read-Only Memory) are both essential types of computer memory, but they serve fundamentally different purposes due to their characteristics:
+
+**Core Differences:**
+
+| Feature         | RAM (Random Access Memory)                                | ROM (Read-Only Memory)                                  |
+| :-------------- | :-------------------------------------------------------- | :------------------------------------------------------ |
+| **Volatility**  | **Volatile:** Loses all data when power is turned off.    | **Non-Volatile:** Retains data even when power is off. |
+| **Primary Use** | **Temporary working memory:** Stores data & instructions actively being used by the CPU (programs, open files, OS). | **Permanent storage:** Stores firmware, boot instructions (BIOS/UEFI), critical data that *must* be retained. |
+| **Writeability**| **Read/Write:** Data can be both read from and written to easily and very quickly by the CPU. | **Primarily Read-Only:** Data is pre-written during manufacturing or via a special process. Writing is slow, difficult, or impossible on standard ROM. |
+| **Speed**       | **Very Fast:** Designed for high-speed access by the CPU. | **Slower:** Access speed is significantly slower than RAM. |
+| **Capacity**    | **Larger:** Modern systems have gigabytes (GB) or terabytes (TB) of RAM. | **Smaller:** Typically holds kilobytes (KB) or megabytes (MB) of data. |
+| **Physical Form**| **Modules:** Installed as removable modules (DIMMs/SODIMMs). | **Chips:** Soldered onto the motherboard or device circuit board. |
+| **Cost**        | **More Expensive per GB:** Due to speed and complexity. | **Less Expensive per GB:** For the small amounts used. |
+
+**Detailed Breakdown:**
+
+1.  **Volatility:**
+    *   **RAM:** Needs constant electrical power to hold data. When you shut down or restart your computer, the contents of RAM are erased. This is why you lose unsaved work during a power cut.
+    *   **ROM:** Retains its data indefinitely without power. This is crucial for storing the initial boot instructions that tell the computer how to start up.
+
+2.  **Purpose & Function:**
+    *   **RAM:** Acts as the computer's **short-term memory** or **workspace**. When you open a program or file, it's loaded from slower storage (like an SSD/HDD) *into* RAM so the CPU can access it incredibly quickly. More RAM allows you to run more programs simultaneously or work with larger files efficiently. It directly impacts system performance and multitasking.
+    *   **ROM:** Acts as the computer's **permanent instruction manual**. It stores:
+        *   **Firmware:** Low-level software that controls hardware (e.g., BIOS/UEFI on a motherboard, firmware in a printer, router, or smartphone).
+        *   **Bootloader:** The very first program that runs when you turn on the computer, initializing hardware and loading the operating system from storage into RAM.
+        *   **Look-up Tables:** Fixed data used by hardware or firmware (e.g., character generators, calibration data).
+
+3.  **Writeability:**
+    *   **RAM:** Designed for constant reading *and* writing. The CPU writes new data (calculation results, program states) to RAM millions of times per second.
+    *   **ROM:** Traditionally, data was written once during manufacturing and could never be changed (""Mask ROM""). Modern types allow updates, but it's a specialized, slower process:
+        *   **PROM:** Programmable ROM - Written once by the user with a special device.
+        *   **EPROM:** Erasable PROM - Erased with UV light, then reprogrammed.
+        *   **EEPROM:** Electrically Erasable PROM - Erased and reprogrammed electronically *in-circuit* (e.g., flashing a BIOS/UEFI update). This is the most common modern ""ROM"".
+        *   **Flash Memory:** A type of EEPROM optimized for speed and block writing (used in SSDs, USB drives, *and* for firmware storage replacing older ROM types).
+
+4.  **Speed:**
+    *   **RAM:** Engineered for maximum speed to keep up with the CPU. Access times are nanoseconds (ns).
+    *   **ROM:** Speed is less critical for its primary function (booting, firmware). Access times are microseconds (µs) or slower, significantly lagging behind RAM.
+
+**Analogy:**
+
+*   **ROM** is like a **printed instruction manual** glued inside a machine. It tells the machine how to start and perform basic operations. You can't easily write in it (or only with special tools), and it stays there forever.
+*   **RAM** is like the **worker's desk space**. They pull pages (data/programs) from the filing cabinet (SSD/HDD) onto the desk to work on them actively. The desk space is cleared (data lost) when the worker goes home (power off). A bigger desk (more RAM) lets them work on more things at once efficiently.
+
+**In Summary:**
+
+*   Use **RAM** for **fast, temporary storage** of data actively being processed by the CPU. It's wiped clean on power-off.
+*   Use **ROM** (or modern EEPROM/Flash) for **permanent storage** of critical instructions (firmware, boot code) that *must* survive power cycles and initiate the system. Writing to it is infrequent and specialized.",56.77,DeepSeek-R1,5,Conceptual,Thinking,"RAM is temporary memory, while ROM is permanent memory.",Correct,5,5
+"If a train travels 60 km in 2 hours, what is its average speed?","
+The average speed is calculated by dividing the total distance traveled by the total time taken.  
+
+Given:  
+- Total distance = 60 km  
+- Total time = 2 hours  
+
+Average speed = total distance / total time = 60 km / 2 h = 30 km/h.  
+
+Therefore, the train's average speed is 30 kilometers per hour.  
+
+This calculation assumes that the speed was constant over the journey, but even if it varied, average speed is still defined as total distance divided by total time.  
+
+**Units:** The distance is in kilometers (km) and the time is in hours (h), so the speed is appropriately in kilometers per hour (km/h).  
+
+**Formula:** Average speed = total distance / total time.",23.51,DeepSeek-R1,6,Math,Thinking,30 km/h,Correct,5,5
+Summarize the importance of teamwork in a workplace.,"<think>
+Okay, the user wants a summary of teamwork importance in the workplace. Hmm, seems straightforward but I should consider why they're asking. Maybe they're preparing training materials, writing a report, or just curious about organizational behavior.  
+
+First, let's structure the key benefits logically. Workplace teamwork impacts multiple levels: organizational outcomes, team functionality, and individual employees. The user probably expects concrete points rather than fluffy generalizations.  
+
+I recall research showing teams outperform individuals in complex tasks—that Harvard Business Review meta-analysis about collective intelligence. Should mention problem-solving diversity explicitly. Also, the social support aspect is crucial; Gallup data always links work friendships to engagement metrics.  
+
+Wait—must highlight innovation too. MIT's studies on ""idea collisions"" in collaborative spaces come to mind. And conflict resolution! Many forget that healthy friction in teams builds better solutions if managed well.  
+
+For the individual section, career growth through peer learning feels important. Maybe add skill diversification? People often overlook how cross-functional exposure accelerates professional development.  
+
+The wrap-up should emphasize it's not just about being nice—teamwork is strategic. Productivity spikes, attrition drops, creativity flourishes. Better include that bit about psychological safety since Google's Project Aristotle made it mainstream.  
+
+...Did I cover all angles? Organization, team, individual. Tangible results and human factors. Yep.
+Teamwork is crucial in the workplace for several key reasons:
+
+1.  **Enhanced Productivity & Efficiency:** Teams combine diverse skills and knowledge, allowing tasks to be completed faster and more effectively than individuals working alone. Workloads are distributed, leveraging individual strengths.
+2.  **Improved Problem Solving & Innovation:** Diverse perspectives lead to more creative solutions and better decision-making. Teams can brainstorm, challenge assumptions, and build on each other's ideas, fostering innovation.
+3.  **Higher Quality Work:** Collaboration enables peer review, error checking, and knowledge sharing, resulting in more thorough and higher-quality outputs. Different viewpoints identify potential flaws.
+4.  **Increased Employee Engagement & Morale:** Working collaboratively fosters a sense of belonging, purpose, and mutual support. Feeling valued within a team boosts motivation, job satisfaction, and reduces burnout.
+5.  **Better Communication & Knowledge Sharing:** Teamwork necessitates open communication, breaking down silos and ensuring information flows freely. This facilitates learning, skill development, and institutional knowledge retention.
+6.  **Stronger Adaptability & Resilience:** Teams are better equipped to handle change, complexity, and unexpected challenges. They can pool resources, support each other, and pivot more quickly than isolated individuals.
+7.  **Improved Conflict Resolution:** Healthy teams develop mechanisms to address disagreements constructively, leading to stronger relationships and better outcomes than unresolved conflicts festering individually.
+8.  **Enhanced Customer Service:** Collaborative teams provide more seamless and comprehensive customer experiences by pooling expertise and ensuring consistent information.
+9.  **Employee Development:** Teamwork exposes individuals to new skills, perspectives, and leadership opportunities, accelerating professional growth and fostering mentorship.
+10. **Achieving Complex Goals:** Large, complex projects often require interdependent tasks and coordinated effort, which is only possible through effective teamwork.
+
+**In essence:** Teamwork transforms individual effort into collective power. It drives better results, fosters a positive and supportive work environment, enhances employee well-being, and enables organizations to thrive in a competitive landscape. It's not just about working *together*, but working *effectively together* towards shared objectives.",26.76,DeepSeek-R1,7,Summary,Thinking,"Teamwork helps employees collaborate, communicate, and achieve common goals.",Correct,5,5
+What are the main advantages of using cloud computing?,"<think>
+Okay, the user is asking about the main advantages of cloud computing. Let me start by recalling the key benefits. Scalability comes to mind first because it's a big differentiator from traditional setups. Companies don't need to buy extra hardware for peak times; they can just scale up as needed. Then there's cost savings—no upfront capital expenses, pay-as-you-go models. That's crucial for startups or businesses wanting to reduce IT costs.
+
+Next, accessibility and flexibility. People can work from anywhere, which became super important during the pandemic. Collaboration tools like Google Docs or Teams rely on cloud infrastructure. Reliability and disaster recovery are also vital. Cloud providers have multiple data centers, so if one fails, services continue. Better than maintaining your own backups.
+
+Speed and agility is another point. Deploying resources quickly without waiting for hardware procurement. DevOps and CI/CD pipelines thrive here. Automatic updates ensure security patches are applied without user intervention. Security might be a concern for some, but major providers invest heavily in it, often more than individual companies can.
+
+Performance is tied to global data centers reducing latency. Maintenance reduction shifts the burden to providers. Environmental benefits through efficient resource sharing. But I should mention potential downsides too, like vendor lock-in or internet dependency, though the question focuses on advantages.
+
+The user might be a student, a professional looking to migrate, or someone evaluating cloud solutions. Their deeper need could be understanding how cloud computing can solve specific problems like high costs, scalability issues, or remote work challenges. Maybe they want to convince their organization to adopt cloud tech. Highlighting cost efficiency and flexibility would address unspoken concerns about budget and adaptability. Ensuring the explanation covers both technical and
+Cloud computing offers numerous significant advantages that have transformed how businesses and individuals operate. Here are the main benefits:
+
+1.  **Cost Efficiency:**
+    *   **Reduced Capital Expenditure (CapEx):** Eliminates the need for large upfront investments in hardware, software, and data centers.
+    *   **Operational Expenditure (OpEx):** Shifts costs to a predictable, pay-as-you-go or subscription model. You only pay for the resources you actually consume (compute power, storage, bandwidth).
+    *   **Economies of Scale:** Cloud providers leverage massive scale, passing on lower costs per unit of resource to customers.
+    *   **Reduced IT Overhead:** Minimizes costs associated with maintaining physical infrastructure (power, cooling, real estate, IT staff for hardware management).
+
+2.  **Scalability & Elasticity:**
+    *   **Instant Scaling:** Easily scale resources (up or down) almost instantly to meet fluctuating demand (e.g., seasonal spikes, marketing campaigns). No need to over-provision ""just in case.""
+    *   **Elasticity:** Automatically scale resources based on predefined rules or real-time demand, optimizing performance and cost.
+    *   **Global Reach:** Quickly deploy applications and services in data centers worldwide to serve users with low latency.
+
+3.  **Agility & Speed:**
+    *   **Rapid Deployment:** Provision computing resources (servers, storage, databases) in minutes or seconds, drastically accelerating development and innovation cycles.
+    *   **Faster Time-to-Market:** Developers can quickly build, test, and deploy applications without infrastructure delays.
+    *   **Experiment Easily:** Lowers the barrier to trying new technologies or launching pilot projects.
+
+4.  **Reliability & High Availability:**
+    *   **Redundancy:** Cloud providers operate vast networks of redundant data centers. If one component fails, workload seamlessly shifts to another.
+    *   **Business Continuity & Disaster Recovery (BCDR):** Built-in tools and services make implementing robust backup, failover, and disaster recovery solutions easier and more cost-effective than traditional methods.
+    *   **High Uptime:** Major providers offer Service Level Agreements (SLAs) guaranteeing very high levels of uptime (e.g., 99.9% or higher).
+
+5.  **Performance:**
+    *   **Global Network:** Access to high-performance computing resources and low-latency networks via globally distributed data centers.
+    *   **Regular Upgrades:** Underlying hardware and software are continuously upgraded by the provider, ensuring access to the latest, fastest technologies.
+    *   **Optimized Infrastructure:** Providers constantly optimize their infrastructure for performance and efficiency.
+
+6.  **Security:**
+    *   **Advanced Security Expertise:** Cloud providers invest heavily in state-of-the-art physical and digital security measures (firewalls, intrusion detection, encryption, DDoS protection) often exceeding what individual organizations can afford or manage.
+    *   **Compliance:** Major providers comply with a wide range of global and industry-specific security standards and certifications (e.g., HIPAA, GDPR, PCI DSS), simplifying compliance efforts for customers.
+    *   **Centralized Security:** Easier to manage and enforce security policies across all resources from a central point.
+
+7.  **Mobility & Accessibility:**
+    *   **Work from Anywhere:** Access applications and data securely from any internet-connected device, anywhere in the world, enabling remote work and collaboration.
+    *   **Device Agnostic:** Less reliance on specific hardware configurations on the user end.
+
+8.  **Automatic Updates & Maintenance:**
+    *   **Managed Infrastructure:** The cloud provider handles all underlying hardware maintenance, software patching, and security updates, freeing up internal IT staff to focus on strategic tasks.
+
+9.  **Sustainability:**
+    *   **Resource Pooling & Efficiency:** Cloud data centers optimize energy consumption and resource utilization far more efficiently than typical on-premises data centers.
+    *   **Reduced Carbon Footprint:** By consolidating workloads onto shared infrastructure and utilizing renewable energy sources, cloud computing can contribute to lower overall carbon emissions compared to decentralized on-premises setups.
+
+**In Summary:** Cloud computing fundamentally shifts IT from a capital-intensive, rigid, and maintenance-heavy model to an operational expense-driven, flexible, scalable, and agile model. It empowers organizations to innovate faster, reduce costs, enhance reliability, improve security posture, and enable modern work practices. While challenges like vendor lock-in, internet dependency, and potential hidden costs exist, the core advantages make cloud adoption compelling for most modern applications.",36.17,DeepSeek-R1,8,General Knowledge,Thinking,"Cloud computing provides flexible, scalable, and cost-effective access to computing resources.",Correct,5,5
+Write a Python function to check whether a number is even or odd.,"
+To determine whether a number is even or odd, we can use the modulus operator `%` to check the remainder when the number is divided by 2. If the remainder is 0, the number is even; otherwise, it's odd. Here's a Python function that implements this logic:
+
+```python
+def check_even_odd(number):
+    if number % 2 == 0:
+        return ""Even""
+    else:
+        return ""Odd""
+```
+
+**Explanation:**
+- The modulus operation `number % 2` computes the remainder when `number` is divided by 2.
+- If the remainder is `0`, the number is **even** (return `""Even""`).
+- If the remainder is `1` (or any non-zero value), the number is **odd** (return `""Odd""`).
+
+**Examples:**
+```python
+print(check_even_odd(4))   # Output: Even
+print(check_even_odd(7))   # Output: Odd
+print(check_even_odd(-2))  # Output: Even (negative even numbers work correctly)
+print(check_even_odd(0))   # Output: Even (0 is even)
+```
+
+This function works correctly for all integers (positive, negative, and zero).",21.05,DeepSeek-R1,9,Coding,Thinking,A Python function that checks whether a number is divisible by 2.,Correct,5,5
+What is the largest planet in our solar system?,"<think>
+Okay, the user is asking, ""What is the largest planet in our solar system?"" This seems like a straightforward astronomy question. Let me recall the basic facts about our solar system's planets.
+
+Jupiter is definitely the largest planet. It's a gas giant, primarily made up of hydrogen and helium. Its diameter is about 11 times that of Earth. Saturn is the second largest, but Jupiter is significantly bigger. 
+
+I should mention Jupiter's mass too—it's over 300 times Earth's mass. That's impressive! Also, Jupiter's famous Great Red Spot is a massive storm that's been raging for centuries. 
+
+The user might be a student doing homework, a curious adult, or maybe a parent helping a child with a school project. Either way, the answer should be clear and accurate. 
+
+I wonder if they need more context? Maybe comparing Jupiter to Earth would help visualize its size. Or mentioning that Jupiter's gravity is so strong it affects other objects in the solar system. 
+
+But since the question is direct, I'll keep the answer concise: Jupiter is the largest, with Saturn as runner-up. Adding a few key details like mass and diameter comparisons should make it helpful without overwhelming them. 
+
+No signs of confusion or deeper needs here—just a simple factual
+The largest planet in our solar system is **Jupiter**.
+
+Here's why:
+
+1.  **Diameter:** Jupiter has a diameter of approximately **142,984 kilometers (88,846 miles)** at its equator. That's about **11 times wider than Earth**.
+2.  **Mass:** Jupiter is also the most massive planet. Its mass is about **318 times the mass of Earth**. In fact, Jupiter contains more than **twice the mass of all the other planets in the solar system combined**.
+3.  **Volume:** Jupiter's volume is so immense that you could fit **over 1,300 Earths** inside it.
+
+**Runner-up:** Saturn is the second-largest planet, but it's significantly smaller than Jupiter in both diameter (about 116,460 km / 72,367 miles) and mass (about 95 times Earth's mass).
+
+Jupiter is a gas giant primarily composed of hydrogen and helium and is famous for its Great Red Spot, a giant storm larger than Earth that has been raging for centuries.",15.52,DeepSeek-R1,10,General Knowledge,Thinking,Jupiter,Correct,5,5
+What is 15% of 240?,"To calculate 15% of 240, you multiply 240 by 0.15. 
+
+So:  
+240 × 0.15 = 36
+
+Therefore, 15% of 240 is 36.",2.2,o3-mini,1,Math,Thinking,36,Correct,5,5
+What is the capital of France?,The capital of France is Paris.,3.1,o3-mini,2,General Knowledge,Thinking,Paris,Correct,5,3
+Explain photosynthesis in simple words.,"Photosynthesis is the process by which plants make their own food. Here's how it works in simple words:
+
+1. Plants take in water from the soil through their roots.
+2. They also take in a gas called carbon dioxide from the air through tiny holes in their leaves.
+3. When sunlight hits the leaves, a special green chemical called chlorophyll helps the plant mix the water and carbon dioxide.
+4. This mixture is turned into sugar, which is the plant's food, and oxygen, which is released into the air.
+
+In short, plants use sunlight to turn water and air into food and oxygen, helping them grow and providing us with the oxygen we breathe.",3.65,o3-mini,3,Explanation,Thinking,"Plants use sunlight, carbon dioxide, and water to make food and release oxygen.",Correct,5,5
+Write a Python function to calculate the factorial of a number.,"Here's a Python function that calculates the factorial of a number using an iterative approach:
+
+------------------------------------------------------------
+def factorial(n):
+    """"""
+    Calculate the factorial of a non-negative integer n.
+
+    The factorial is defined as:
+        n! = 1 * 2 * 3 * ... * n
+    with 0! defined as 1.
+
+    Parameters:
+    n (int): A non-negative integer whose factorial is to be calculated.
+
+    Returns:
+    int: The factorial of n.
+
+    Raises:
+    ValueError: If n is a negative integer.
+    """"""
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+# Example usage:
+if __name__ == ""__main__"":
+    try:
+        number = 5
+        print(f""The factorial of {number} is: {factorial(number)}"")
+    except ValueError as e:
+        print(e)
+------------------------------------------------------------
+
+Explanation:
+
+1. The function checks if the input is negative and raises a ValueError, as factorial is only defined for non-negative integers.
+2. For non-negative input, it computes the factorial by multiplying all numbers from 2 to n.
+3. The main block demonstrates how you might call the function.",4.1,o3-mini,4,Coding,Thinking,A Python function that calculates the factorial of a number.,Correct,5,5
+What is the difference between RAM and ROM?,"RAM (Random Access Memory) and ROM (Read-Only Memory) are both types of memory used in computers, but they serve different purposes and have distinct properties:
+
+1. Volatility:
+   • RAM is volatile memory, meaning it only holds data while the device is powered on. When you shut down your computer, the information in RAM is lost.
+   • ROM, on the other hand, is nonvolatile. The data stored in ROM is retained even when the device is turned off.
+
+2. Function and Use:
+   • RAM is used as a workspace for the CPU to store data and programs that are actively in use. It provides quick read and write access necessary for running applications and the operating system.
+   • ROM contains firmware or permanent software that is essential for booting up the computer and performing basic hardware functions. It typically holds startup instructions, which are rarely changed.
+
+3. Read/Write Capabilities:
+   • RAM is designed for fast, temporary read/write operations, which allows it to handle the dynamic data needs of an active system.
+   • ROM is primarily read-only, meaning its data is pre-written (usually during manufacturing) and not meant to be modified frequently. Some modern ROM types (like EEPROM) allow limited rewriting, but not in the same dynamic way as RAM.
+
+In summary, RAM is used for temporary, high-speed data storage that the system constantly reads from and writes to during operation, whereas ROM is used to permanently store critical instructions and system software needed for booting and basic functions.",3.58,o3-mini,5,Conceptual,Thinking,"RAM is temporary memory, while ROM is permanent memory.",Correct,5,5
+"If a train travels 60 km in 2 hours, what is its average speed?","To find the average speed, divide the total distance by the total time. Here, the train travels 60 km in 2 hours.
+
+Calculation:
+Average speed = Distance/Time = 60 km / 2 hours = 30 km/h
+
+Thus, the train's average speed is 30 kilometers per hour.",1.83,o3-mini,6,Math,Thinking,30 km/h,Correct,5,5
+Summarize the importance of teamwork in a workplace.,"Teamwork is essential in the workplace because it brings together diverse skills and perspectives that lead to innovative solutions and more efficient problem-solving. When colleagues collaborate effectively, they can share responsibilities and reduce individual stress, leading to a more productive and engaging environment. Working as a team fosters better communication and trust, which in turn strengthens relationships and creates a positive company culture. Moreover, a collaborative approach ensures that challenges are met more effectively, as team members can support one another, maintain mutual accountability, and adapt quickly to changes. In essence, teamwork not only drives business success but also enhances employee satisfaction and the overall work experience.",2.84,o3-mini,7,Summary,Thinking,"Teamwork helps employees collaborate, communicate, and achieve common goals.",Correct,5,5
+What are the main advantages of using cloud computing?,"Cloud computing offers several key advantages that make it an attractive option for businesses and individuals alike:
+
+1. Cost Efficiency: Instead of making large capital investments in hardware and infrastructure, users pay for what they use on a subscription or pay-per-use basis. This not only reduces upfront costs but also cuts expenses related to maintenance and upgrades.
+
+2. Scalability and Flexibility: Cloud services allow resources to be scaled up or down quickly based on demand. Businesses can easily accommodate growth, seasonal variations, or unexpected spikes in usage without the need to invest in additional physical infrastructure.
+
+3. Accessibility and Collaboration: Cloud computing enables remote access to applications and data from any location with an internet connection. This fosters a collaborative environment where teams can work together in real time, regardless of their geographic distribution.
+
+4. Faster Deployment and Agility: New applications and services can be deployed rapidly. Cloud infrastructure enables developers to experiment and innovate quickly without waiting for extensive hardware provisioning, which helps organizations adapt to changing market needs.
+
+5. Improved Reliability and Disaster Recovery: Many cloud providers offer robust redundancy, automated backups, and disaster recovery solutions. This means that data is typically safer and more resilient against system failures or natural disasters compared to traditional on-premises setups.
+
+6. Enhanced Security: While security remains a shared responsibility between provider and user, many cloud providers have robust security measures in place—such as data encryption, continuous monitoring, and compliance with industry standards—which can help protect sensitive data and applications.
+
+7. Reduced IT Complexity: By outsourcing maintenance, infrastructure updates, and security patching to cloud providers, organizations can focus more on their core business activities rather than managing complex IT infrastructure.
+
+Overall, cloud computing helps organizations become more agile, cost-effective, and scalable, enabling them to better respond to dynamic business needs and technological changes.",4.44,o3-mini,8,General Knowledge,Thinking,"Cloud computing provides flexible, scalable, and cost-effective access to computing resources.",Correct,5,5
+Write a Python function to check whether a number is even or odd.,"Here's a simple Python function that determines whether a given number is even or odd:
+
+-------------------------------------------------
+def check_even_odd(number):
+    """"""
+    Check whether the given number is even or odd.
+
+    Parameters:
+        number (int): The number to check.
+
+    Returns:
+        str: ""even"" if the number is even, ""odd"" if it's odd.
+    """"""
+    if number % 2 == 0:
+        return ""even""
+    else:
+        return ""odd""
+
+# Example usage:
+num = 7
+result = check_even_odd(num)
+print(f""The number {num} is {result}."")
+-------------------------------------------------
+
+Explanation:
+1. The function check_even_odd takes an integer argument called number.
+2. It uses the modulus operator (%) to calculate the remainder when number is divided by 2.
+3. If the remainder is 0, the number is even; otherwise, it's odd.
+4. The function returns a string ""even"" or ""odd"" based on the result.
+5. An example usage is provided to demonstrate how the function works.",3.11,o3-mini,9,Coding,Thinking,A Python function that checks whether a number is divisible by 2.,Correct,5,5
+What is the largest planet in our solar system?,"The largest planet in our solar system is Jupiter. It’s a gas giant, primarily made up of hydrogen and helium, and its immense size and mass have a significant influence on the gravitational dynamics of our solar system.",2.35,o3-mini,10,General Knowledge,Thinking,Jupiter,Correct,5,5
+What is 15% of 240?,15 % of 240 is \(0.15 \times 240 = 36\).,0.59,GPT-OSS-20B,1,Math,Instruct,36,Correct,5,
+What is the capital of France?,The capital of France is Paris.,2.16,GPT-OSS-20B,2,General Knowledge,Instruct,Paris,Correct,5,
+Explain photosynthesis in simple words.,"**Photosynthesis** is the process by which green plants (and some algae and bacteria) turn sunlight into food.
+
+| What happens | How it works |
+|--------------|--------------|
+| **Sunlight** | The plant’s leaves contain a green pigment called **chlorophyll** that captures light. |
+| **Water** | Roots suck up water from the soil, carrying it up to the leaves. |
+| **Carbon dioxide** | Plants take in CO₂ from the air through tiny pores called stomata. |
+| **Energy conversion** | Chlorophyll uses the light energy to split the water into hydrogen and oxygen. The hydrogen joins with CO₂ to make a simple sugar called **glucose**. |
+| **Oxygen** | The oxygen released from the water goes back into the air. |
+
+So, in short: **Plants use sunlight, water, and CO₂ to make glucose (food) and oxygen.** The glucose can be stored or used for growth, while the oxygen is a by‑product that we breathe.",0.63,GPT-OSS-20B,3,Explanation,Instruct,"Plants use sunlight, carbon dioxide, and water to make food and release oxygen.",Correct,5,
+Write a Python function to calculate the factorial of a number.,"Here is a compact, production‑ready implementation that handles non‑negative integers, raises an informative error for bad input, and includes both an iterative and a recursive version for comparison.
+
+```python
+def factorial(n: int) -> int:
+    """"""
+    Return the factorial of a non‑negative integer n.
+
+    Parameters
+    ----------
+    n : int
+        The number for which to compute the factorial. Must be >= 0.
+
+    Returns
+    -------
+    int
+        n!  (the product of all positive integers <= n)
+
+    Raises
+    ------
+    ValueError
+        If n is negative or not an integer.
+
+    Examples
+    --------
+    >>> factorial(0)
+    1
+    >>> factorial(5)
+    120
+    """"""
+    if not isinstance(n, int):
+        raise ValueError(f""Input must be an integer, got {type(n).__name__}"")
+
+    if n < 0:
+        raise ValueError(f""Factorial is undefined for negative integers: {n}"")
+
+    # Iterative implementation – O(n) time, O(1) extra space
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+```
+
+### Optional recursive version (for educational purposes)
+
+```python
+def factorial_recursive(n: int) -> int:
+    """"""
+    Recursive implementation of factorial. 
+    Not recommended for large n due to recursion depth limits.
+    """"""
+    if n < 0:
+        raise ValueError(""Factorial undefined for negative integers"")
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial_recursive(n - 1)
+```
+
+### Using Python’s built‑in function
+
+If you just need the factorial and don't want to reinvent the wheel, Python’s standard library already provides one:
+
+```python
+import math
+
+def factorial_builtin(n: int) -> int:
+    return math.factorial(n)
+```
+
+Feel free to choose the implementation that best suits your needs!",0.98,GPT-OSS-20B,4,Coding,Instruct,A Python function that calculates the factorial of a number.,Correct,5,
+What is the difference between RAM and ROM?,"### In a nutshell
+
+| Feature | **RAM (Random‑Access Memory)** | **ROM (Read‑Only Memory)** |
+|---------|--------------------------------|---------------------------|
+| **Volatility** | *Volatile* – loses data when power is removed. | *Non‑volatile* – keeps data even when the device is turned off. |
+| **Primary purpose** | Temporary workspace for the CPU (running programs, data being processed). | Permanent storage of firmware, system boot code, or data that must never change. |
+| **Read/Write** | Read ↔ Write (fast, both directions). | Mostly read; some types (e.g., EEPROM, flash) can be written, but writing is slower and limited in cycles. |
+| **Typical speed** | Very fast (nanoseconds). | Much slower (micro‑ to milliseconds, especially for writes). |
+| **Capacity** | Usually larger (gigabytes in PCs, terabytes in data centers). | Smaller (kilobytes to a few megabytes in embedded systems). |
+| **Cost per bit** | Higher, but economies of scale keep costs down for large sizes. | Lower for large capacities, but higher for very high‑density non‑volatile options. |
+| **Examples** | DDR4/DDR5 DIMM, VRAM in GPUs, cache (L1/L2/L3). | BIOS/UEFI firmware, bootloaders, embedded system firmware, EEPROM in microcontrollers. |
+| **Write limits** | Unlimited (except for wear on some types like SSDs that use DRAM as cache). | Limited write cycles in EEPROM/Flash; ROM is truly immutable. |
+
+---
+
+## Detailed explanation
+
+### 1. What RAM actually is
+- **Purpose**: Acts as the *working area* for the CPU. When you open a program, the OS copies the executable and its data into RAM so the processor can fetch instructions and operands in just a few nanoseconds.
+- **Volatility**: Because the data is stored in a capacitor‑based circuit (DRAM) or transistor state (SRAM), the information disappears when power is removed. That’s why a laptop’s open documents are lost after a hard shutdown.
+- **Speed**: Designed for the fastest possible access; hence the naming “random‑access” (any address can be accessed nearly instantly).
+- **Typical forms**:
+  - **DRAM** (Dynamic RAM) – most common in PCs and servers.
+  - **SRAM** (Static RAM) – faster, used in cache and embedded systems.
+  - **VRAM** – video memory for graphics cards.
+
+### 2. What ROM actually is
+- **Purpose**: Holds firmware and critical startup code. When a computer boots, the power‑on self‑test (POST) runs from ROM, which then hands control to the BIOS/UEFI firmware.
+- **Non‑volatile**: The data is retained even when the device is unplugged. That’s why your computer can start up without re‑installing the operating system each time.
+- **Read‑only vs “write‑once”**: Traditional ROM was literally unchangeable. Modern ROM types (PROM, EPROM, EEPROM, flash) can be rewritten, but the process is slower, usually done in a factory or by specialized tools.
+- **Typical forms**:
+  - **PROM** (Programmable ROM) – written once after manufacturing.
+  - **EPROM** (Erasable PROM) – erasable with UV light.
+  - **EEPROM** (Electrically Erasable) – erasable in small chunks.
+  - **Flash memory** – the most common, used in SSDs, USB drives, and embedded firmware.
+
+### 3. Why the difference matters
+
+| Scenario | You need RAM | You need ROM |
+|----------|--------------|--------------|
+| **Running applications** | The OS and apps load into RAM. | None – ROM is not involved in runtime. |
+| **Booting a computer** | Minimal RAM needed for early stages of boot. | The BIOS/UEFI firmware lives in ROM. |
+| **Embedded system firmware** | Temporary variables during operation. | The core firmware that starts the MCU. |
+| **Data persistence** | No persistence; must be saved to disk or cloud. | Persistence across power cycles. |
+| **Data modification** | Can be modified freely while powered. | Usually fixed, though flash can be updated with firmware upgrades. |
+
+---
+
+## Quick FAQ
+
+| Question | Answer |
+|----------|--------|
+| *Can I read data from ROM with a program?* | Yes. All programs read from ROM (e.g., BIOS), but writing is restricted unless the ROM type supports it. |
+| *Is flash memory considered RAM?* | No. Flash is a type of ROM—non‑volatile storage, albeit with write‑capabilities. |
+| *Why is RAM called “random‑access”?* | Because any memory cell can be accessed directly without having to read through preceding cells, unlike magnetic tape. |
+| *How does the CPU decide what to put in RAM?* | The operating system’s memory manager loads code and data from disk into RAM on demand (“paging” or “swapping”). |
+| *Can I upgrade my ROM?* | In many modern devices, firmware updates are performed over the air (OTA) or via a USB port, rewriting the flash memory. |
+
+---
+
+### Bottom line
+
+- **RAM**: Fast, temporary, volatile memory used for active data and instructions during program execution.
+- **ROM**: Slow (or read‑only), permanent memory that stores firmware, boot code, and other data that must survive power loss.
+
+Understanding this distinction is key to grasping how computers boot, run applications, and keep data safe.",1.6,GPT-OSS-20B,5,Conceptual,Instruct,"RAM is temporary memory, while ROM is permanent memory.",Correct,5,
+"If a train travels 60 km in 2 hours, what is its average speed?","Average speed is simply the total distance covered divided by the total time taken.
+
+\[
+\text{Average speed} = \frac{\text{Distance}}{\text{Time}}
+\]
+
+Given:
+- Distance = 60 km  
+- Time = 2 hours
+
+\[
+\text{Average speed} = \frac{60\ \text{km}}{2\ \text{h}} = 30\ \text{km/h}
+\]
+
+So the train’s average speed is **30 km per hour**.",0.48,GPT-OSS-20B,6,Math,Instruct,30 km/h,Correct,5,
+Summarize the importance of teamwork in a workplace.,"**Teamwork in the Workplace – Key Takeaways**
+
+- **Higher Productivity & Efficiency**  
+  Collaborative teams pool skills and resources, enabling faster completion of tasks and more accurate outcomes than individuals working in isolation.
+
+- **Enhanced Creativity & Problem‑Solving**  
+  Diverse viewpoints spark innovation and help generate solutions that a single mind might miss, turning challenges into opportunities.
+
+- **Improved Employee Engagement & Retention**  
+  Working together builds camaraderie and a sense of belonging, boosting motivation and reducing turnover.
+
+- **Learning & Skill Development**  
+  Team members teach one another, fostering continuous growth and adaptability across the organization.
+
+- **Resilience & Risk Management**  
+  When one member faces setbacks, teammates can redistribute workload and support each other, ensuring projects stay on track.
+
+In short, teamwork turns isolated efforts into a unified force, driving performance, morale, and long‑term success.",2.01,GPT-OSS-20B,7,Summary,Instruct,"Teamwork helps employees collaborate, communicate, and achieve common goals.",Correct,5,
+What are the main advantages of using cloud computing?,"### Key Advantages of Cloud Computing
+
+| # | Advantage | Why It Matters | Practical Impact |
+|---|-----------|----------------|------------------|
+| 1 | **Elastic Scalability** | Resources can grow or shrink on demand. | • Handle traffic spikes (e‑commerce, gaming). <br>• Avoid over‑provisioning during low‑usage periods. |
+| 2 | **Cost Efficiency** | Pay‑as‑you‑go pricing, reduced CAPEX → OPEX. | • No need to purchase servers, storage, or networking gear.<br>• Lower maintenance and upgrade costs. |
+| 3 | **Rapid Deployment & Agility** | Instantly spin up environments, deploy code, run workloads. | • Shorten release cycles (CI/CD pipelines). <br>• Quickly prototype and test new products. |
+| 4 | **Global Reach & Accessibility** | Data centers in many regions, HTTPS, CDN integration. | • Serve users worldwide with low latency.<br>• Enable remote/remote‑work teams. |
+| 5 | **High Availability & Reliability** | Built‑in redundancy, failover, and SLAs. | • 99.95%+ uptime guarantees.<br>• Automatic backup and snapshotting. |
+| 6 | **Security & Compliance** | Managed security controls, certifications (ISO, SOC, GDPR). | • Offload patching, intrusion detection, and data protection to experts.<br>• Meet industry regulatory requirements. |
+| 7 | **Disaster Recovery & Business Continuity** | Automated backups, multi‑region replication. | • Recover quickly from outages or data loss. <br>• Avoid costly downtime. |
+| 8 | **Managed Services & Automation** | Managed databases, Kubernetes, AI/ML, serverless functions. | • Reduce operational overhead.<br>• Focus on business logic instead of infrastructure. |
+| 9 | **Innovation & Access to Cutting‑Edge Tech** | Instant access to GPUs, ML frameworks, quantum computing APIs. | • Experiment with AI/ML without large upfront investments. |
+| 10 | **Environmentally Friendly** | Shared resources → lower carbon footprint per workload. | • Smaller data center footprint per user. |
+| 11 | **Vendor Ecosystem & Integration** | Rich marketplaces, APIs, and third‑party tools. | • Plug‑and‑play add‑ons, data connectors, analytics services. |
+
+---
+
+#### Quick Take‑away
+Cloud computing turns **infrastructure into a utility**—you pay for what you use, scale instantly, and rely on a managed platform that handles uptime, security, and compliance. This lets businesses focus on product innovation, faster time‑to‑market, and delivering global services with minimal operational overhead.",1.07,GPT-OSS-20B,8,General Knowledge,Instruct,"Cloud computing provides flexible, scalable, and cost-effective access to computing resources.",Correct,5,
+Write a Python function to check whether a number is even or odd.,"Here’s a compact, well‑documented Python function that tells you whether an integer is even or odd.  
+It accepts only integers (raising an informative error for other types) and returns a Boolean value (`True` if the number is even, `False` otherwise).  
+Feel free to tweak the return type or add extra formatting (e.g., printing “even/odd”) as your project requires.
+
+```python
+def is_even(n: int) -> bool:
+    """"""
+    Determine if the given number is even.
+
+    Parameters
+    ----------
+    n : int
+        The integer to check.
+
+    Returns
+    -------
+    bool
+        True if n is even, False if n is odd.
+
+    Raises
+    ------
+    TypeError
+        If the argument is not an integer.
+
+    Examples
+    --------
+    >>> is_even(10)
+    True
+    >>> is_even(7)
+    False
+    >>> is_even(-4)
+    True
+    """"""
+    if not isinstance(n, int):
+        raise TypeError(f""Expected an integer, got {type(n).__name__}"")
+
+    return n % 2 == 0
+```
+
+### Quick usage
+
+```python
+for number in [0, 1, 2, 3, -4, -5]:
+    print(f""{number} is even? {is_even(number)}"")
+```
+
+Output:
+
+```
+0 is even? True
+1 is even? False
+2 is even? True
+3 is even? False
+-4 is even? True
+-5 is even? False
+```
+
+---
+
+#### Want a function that returns the string “even” or “odd” instead?
+
+```python
+def even_or_odd(n: int) -> str:
+    if not isinstance(n, int):
+        raise TypeError(f""Expected an integer, got {type(n).__name__}"")
+
+    return ""even"" if n % 2 == 0 else ""odd""
+```
+
+```python
+print(even_or_odd(7))   # prints ""odd""
+print(even_or_odd(8))   # prints ""even""
+```
+
+Both functions are small, type‑safe, and ready to drop into any codebase. Happy coding!",1.05,GPT-OSS-20B,9,Coding,Instruct,A Python function that checks whether a number is divisible by 2.,Correct,5,
+What is the largest planet in our solar system?,"The largest planet in our solar system is **Jupiter**. It has the greatest diameter (about 142,000 km) and the greatest mass (roughly one‑tenth of the Sun's mass).",0.24,GPT-OSS-20B,10,General Knowledge,Instruct,Jupiter,Correct,5,

@@ -1,0 +1,5 @@
+Task,Model,Total Questions,Successful Responses,Correct,Incorrect,API Errors,Accuracy (%),Average Response Time (sec),Average Quality (1-5),Model Type
+HumanEval Coding,DeepSeek-R1,25,25,23,2,0,92.0,106.47,4.76,Thinking
+HumanEval Coding,GPT-4o mini,25,25,24,1,0,96.0,4.45,4.88,Instruct
+HumanEval Coding,GPT-OSS-20B,25,25,23,2,0,92.0,0.85,4.76,Instruct
+HumanEval Coding,o3-mini,25,25,4,21,0,16.0,3.44,2.48,Thinking

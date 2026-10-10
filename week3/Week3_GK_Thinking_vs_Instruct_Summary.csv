@@ -1,0 +1,3 @@
+Model Type,Successful_Responses,Correct,Average_Clarity,Average_Response_Time,Accuracy (%)
+Instruct,100,99,4.57,0.75,99.0
+Thinking,100,100,4.05,12.82,100.0

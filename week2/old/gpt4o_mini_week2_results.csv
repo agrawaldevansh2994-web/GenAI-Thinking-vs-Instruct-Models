@@ -1,0 +1,154 @@
+question,response,response_time
+What is 15% of 240?,"To find 15% of 240, you can multiply 240 by 0.15:
+
+\[
+240 \times 0.15 = 36
+\]
+
+So, 15% of 240 is 36.",2.95
+What is the capital of France?,The capital of France is Paris.,1.1
+Explain photosynthesis in simple words.,"Photosynthesis is the process that plants use to make their food. Here's how it works in simple terms:
+
+1. **Sunlight**: Plants take in sunlight through their leaves.
+2. **Air**: They absorb carbon dioxide from the air.
+3. **Water**: Plants take in water through their roots from the soil.
+
+Using sunlight, plants mix carbon dioxide and water to create glucose (a type of sugar) and oxygen. The glucose is used for energy and growth, while the oxygen is released into the air, which is great for us to breathe! So, photosynthesis helps plants live and also provides oxygen for other living things.",1.59
+Write a Python function to calculate the factorial of a number.,"Certainly! Here’s a Python function that calculates the factorial of a number using a recursive approach:
+
+```python
+def factorial(n):
+    """"""Calculate the factorial of a non-negative integer n.""""""
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Example usage:
+print(factorial(5))  # Output: 120
+```
+
+Alternatively, you can use an iterative approach:
+
+```python
+def factorial(n):
+    """"""Calculate the factorial of a non-negative integer n.""""""
+    if n < 0:
+        raise ValueError(""Factorial is not defined for negative numbers."")
+    
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+# Example usage:
+print(factorial(5))  # Output: 120
+```
+
+Both implementations will correctly compute the factorial of a non-negative integer. You can choose either depending on your preference for recursion or iteration.",3.03
+What is the difference between RAM and ROM?,"RAM (Random Access Memory) and ROM (Read-Only Memory) are both crucial types of memory used in computers and other electronic devices, but they serve different purposes and have distinct characteristics:
+
+### RAM (Random Access Memory):
+- **Volatility**: RAM is volatile, meaning it loses its data when power is turned off.
+- **Purpose**: It is used for temporary storage while a computer is running, allowing for quick read and write access to data actively in use.
+- **Read/Write Ability**: Data can be read and written onto RAM easily, which enables the operating system and applications to run smoothly.
+- **Speed**: RAM is much faster than ROM, allowing for quick access to data and instructions.
+- **Capacity**: Typically larger in capacity compared to ROM, with modern systems commonly equipped with several gigabytes of RAM.
+
+### ROM (Read-Only Memory):
+- **Non-volatility**: ROM is non-volatile, meaning it retains its data even when the power is turned off.
+- **Purpose**: It is used to store firmware, which is essential software that initializes hardware at startup and runs basic system functions.
+- **Read/Write Ability**: Traditionally, data in ROM is not easily modified or written over (hence ""read-only""), although some modern types (like EEPROM and flash memory) allow for limited writing.
+- **Speed**: ROM is slower than RAM in terms of data access.
+- **Capacity**: Usually smaller in size compared to RAM since it primarily holds firmware and essential instructions.
+
+In summary, RAM is fast, temporary memory that helps with active processes, while ROM is slower, non-volatile memory used for permanent storage of critical system instructions.",3.66
+"If a train travels 60 km in 2 hours, what is its average speed?","To find the average speed, you can use the formula:
+
+\[
+\text{Average Speed} = \frac{\text{Total Distance}}{\text{Total Time}}
+\]
+
+In this case, the total distance is 60 km and the total time is 2 hours.
+
+\[
+\text{Average Speed} = \frac{60 \text{ km}}{2 \text{ hours}} = 30 \text{ km/h}
+\]
+
+So, the average speed of the train is 30 km/h.",1.87
+Summarize the importance of teamwork in a workplace.,"Teamwork is essential in the workplace for several reasons:
+
+1. **Enhanced Collaboration**: Teamwork fosters collaboration, allowing diverse skill sets and perspectives to contribute to problem-solving and innovation.
+
+2. **Increased Efficiency**: Working together enables task delegation, which can lead to faster completion of projects and improved productivity.
+
+3. **Shared Knowledge**: Team members can share expertise and insights, leading to better decision-making and continuous learning within the group.
+
+4. **Support and Motivation**: A strong team provides emotional support, boosting morale and motivation among members, which can enhance job satisfaction and reduce burnout.
+
+5. **Conflict Resolution**: Teams can navigate conflicts constructively, leading to better relationships and a more harmonious work environment.
+
+6. **Goal Alignment**: Teamwork ensures that everyone is aligned with common objectives, promoting a unified approach towards achieving organizational goals.
+
+Overall, effective teamwork can lead to higher performance, greater creativity, and a positive workplace culture.",2.84
+What are the main advantages of using cloud computing?,"Cloud computing offers several significant advantages, including:
+
+1. **Cost Efficiency**:
+   - Reduces the need for physical hardware and infrastructure, leading to lower capital expenditures.
+   - Operates on a pay-as-you-go model, allowing businesses to pay only for the resources they use.
+
+2. **Scalability**:
+   - Easily scale resources up or down based on demand, accommodating growth without over-investment.
+   - Provides flexibility to adapt quickly to changing business needs.
+
+3. **Accessibility**:
+   - Enables access to data and applications from anywhere with an internet connection, facilitating remote work and collaboration.
+   - Supports multiple devices and platforms.
+
+4. **Reliability**:
+   - Offers robust backup and disaster recovery options, ensuring data is protected and available.
+   - Often includes built-in data redundancy across multiple geographic locations.
+
+5. **Performance and Speed**:
+   - Access to high-performance computing resources and the latest technology without needing in-house upgrades.
+   - Fast deployment of applications and services.
+
+6. **Automatic Updates**:
+   - Providers handle software updates, security patches, and maintenance, reducing the burden on IT staff.
+   - Ensures the latest features and security protocols are always in place.
+
+7. **Security**:
+   - Many cloud providers offer advanced security measures, including encryption, identity management, and compliance certifications.
+   - Dedicated teams focus on cybersecurity, often providing a level of protection difficult for individual organizations to match.
+
+8. **Environmental Impact**:
+   - Promotes energy efficiency by optimizing resource use and reducing the number of physical servers needed.
+   - Cloud providers often use green technologies and renewable energy sources.
+
+9. **Collaboration**:
+   - Enhances teamwork via shared resources and tools, allowing multiple users to work on projects simultaneously in real-time.
+   - Facilitates communication and project management through integrated platforms.
+
+10. **Innovation**:
+    - Provides access to cutting-edge technologies, such as AI and machine learning, enabling businesses to innovate faster and more effectively.
+
+Using cloud computing can transform how organizations operate, enabling them to be more agile, competitive, and responsive to market demands.",4.09
+Write a Python function to check whether a number is even or odd.,"Certainly! Here’s a simple Python function that checks whether a number is even or odd:
+
+```python
+def is_even_or_odd(number):
+    if number % 2 == 0:
+        return ""Even""
+    else:
+        return ""Odd""
+
+# Example usage:
+num = 10
+result = is_even_or_odd(num)
+print(f""The number {num} is {result}."")
+```
+
+You can call this function with any integer to determine if it's even or odd.",1.82
+What is the largest planet in our solar system?,"The largest planet in our solar system is Jupiter. It is a gas giant with a diameter of about 86,881 miles (139,822 kilometers) and is known for its Great Red Spot, a massive storm, and its numerous moons.",1.07

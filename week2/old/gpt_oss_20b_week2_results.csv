@@ -1,0 +1,278 @@
+question,response,response_time
+What is 15% of 240?,15 % of 240 is \(0.15 \times 240 = 36\).,0.59
+What is the capital of France?,The capital of France is Paris.,2.16
+Explain photosynthesis in simple words.,"**Photosynthesis** is the process by which green plants (and some algae and bacteria) turn sunlight into food.
+
+| What happens | How it works |
+|--------------|--------------|
+| **Sunlight** | The plant’s leaves contain a green pigment called **chlorophyll** that captures light. |
+| **Water** | Roots suck up water from the soil, carrying it up to the leaves. |
+| **Carbon dioxide** | Plants take in CO₂ from the air through tiny pores called stomata. |
+| **Energy conversion** | Chlorophyll uses the light energy to split the water into hydrogen and oxygen. The hydrogen joins with CO₂ to make a simple sugar called **glucose**. |
+| **Oxygen** | The oxygen released from the water goes back into the air. |
+
+So, in short: **Plants use sunlight, water, and CO₂ to make glucose (food) and oxygen.** The glucose can be stored or used for growth, while the oxygen is a by‑product that we breathe.",0.63
+Write a Python function to calculate the factorial of a number.,"Here is a compact, production‑ready implementation that handles non‑negative integers, raises an informative error for bad input, and includes both an iterative and a recursive version for comparison.
+
+```python
+def factorial(n: int) -> int:
+    """"""
+    Return the factorial of a non‑negative integer n.
+
+    Parameters
+    ----------
+    n : int
+        The number for which to compute the factorial. Must be >= 0.
+
+    Returns
+    -------
+    int
+        n!  (the product of all positive integers <= n)
+
+    Raises
+    ------
+    ValueError
+        If n is negative or not an integer.
+
+    Examples
+    --------
+    >>> factorial(0)
+    1
+    >>> factorial(5)
+    120
+    """"""
+    if not isinstance(n, int):
+        raise ValueError(f""Input must be an integer, got {type(n).__name__}"")
+
+    if n < 0:
+        raise ValueError(f""Factorial is undefined for negative integers: {n}"")
+
+    # Iterative implementation – O(n) time, O(1) extra space
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+```
+
+### Optional recursive version (for educational purposes)
+
+```python
+def factorial_recursive(n: int) -> int:
+    """"""
+    Recursive implementation of factorial. 
+    Not recommended for large n due to recursion depth limits.
+    """"""
+    if n < 0:
+        raise ValueError(""Factorial undefined for negative integers"")
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial_recursive(n - 1)
+```
+
+### Using Python’s built‑in function
+
+If you just need the factorial and don't want to reinvent the wheel, Python’s standard library already provides one:
+
+```python
+import math
+
+def factorial_builtin(n: int) -> int:
+    return math.factorial(n)
+```
+
+Feel free to choose the implementation that best suits your needs!",0.98
+What is the difference between RAM and ROM?,"### In a nutshell
+
+| Feature | **RAM (Random‑Access Memory)** | **ROM (Read‑Only Memory)** |
+|---------|--------------------------------|---------------------------|
+| **Volatility** | *Volatile* – loses data when power is removed. | *Non‑volatile* – keeps data even when the device is turned off. |
+| **Primary purpose** | Temporary workspace for the CPU (running programs, data being processed). | Permanent storage of firmware, system boot code, or data that must never change. |
+| **Read/Write** | Read ↔ Write (fast, both directions). | Mostly read; some types (e.g., EEPROM, flash) can be written, but writing is slower and limited in cycles. |
+| **Typical speed** | Very fast (nanoseconds). | Much slower (micro‑ to milliseconds, especially for writes). |
+| **Capacity** | Usually larger (gigabytes in PCs, terabytes in data centers). | Smaller (kilobytes to a few megabytes in embedded systems). |
+| **Cost per bit** | Higher, but economies of scale keep costs down for large sizes. | Lower for large capacities, but higher for very high‑density non‑volatile options. |
+| **Examples** | DDR4/DDR5 DIMM, VRAM in GPUs, cache (L1/L2/L3). | BIOS/UEFI firmware, bootloaders, embedded system firmware, EEPROM in microcontrollers. |
+| **Write limits** | Unlimited (except for wear on some types like SSDs that use DRAM as cache). | Limited write cycles in EEPROM/Flash; ROM is truly immutable. |
+
+---
+
+## Detailed explanation
+
+### 1. What RAM actually is
+- **Purpose**: Acts as the *working area* for the CPU. When you open a program, the OS copies the executable and its data into RAM so the processor can fetch instructions and operands in just a few nanoseconds.
+- **Volatility**: Because the data is stored in a capacitor‑based circuit (DRAM) or transistor state (SRAM), the information disappears when power is removed. That’s why a laptop’s open documents are lost after a hard shutdown.
+- **Speed**: Designed for the fastest possible access; hence the naming “random‑access” (any address can be accessed nearly instantly).
+- **Typical forms**:
+  - **DRAM** (Dynamic RAM) – most common in PCs and servers.
+  - **SRAM** (Static RAM) – faster, used in cache and embedded systems.
+  - **VRAM** – video memory for graphics cards.
+
+### 2. What ROM actually is
+- **Purpose**: Holds firmware and critical startup code. When a computer boots, the power‑on self‑test (POST) runs from ROM, which then hands control to the BIOS/UEFI firmware.
+- **Non‑volatile**: The data is retained even when the device is unplugged. That’s why your computer can start up without re‑installing the operating system each time.
+- **Read‑only vs “write‑once”**: Traditional ROM was literally unchangeable. Modern ROM types (PROM, EPROM, EEPROM, flash) can be rewritten, but the process is slower, usually done in a factory or by specialized tools.
+- **Typical forms**:
+  - **PROM** (Programmable ROM) – written once after manufacturing.
+  - **EPROM** (Erasable PROM) – erasable with UV light.
+  - **EEPROM** (Electrically Erasable) – erasable in small chunks.
+  - **Flash memory** – the most common, used in SSDs, USB drives, and embedded firmware.
+
+### 3. Why the difference matters
+
+| Scenario | You need RAM | You need ROM |
+|----------|--------------|--------------|
+| **Running applications** | The OS and apps load into RAM. | None – ROM is not involved in runtime. |
+| **Booting a computer** | Minimal RAM needed for early stages of boot. | The BIOS/UEFI firmware lives in ROM. |
+| **Embedded system firmware** | Temporary variables during operation. | The core firmware that starts the MCU. |
+| **Data persistence** | No persistence; must be saved to disk or cloud. | Persistence across power cycles. |
+| **Data modification** | Can be modified freely while powered. | Usually fixed, though flash can be updated with firmware upgrades. |
+
+---
+
+## Quick FAQ
+
+| Question | Answer |
+|----------|--------|
+| *Can I read data from ROM with a program?* | Yes. All programs read from ROM (e.g., BIOS), but writing is restricted unless the ROM type supports it. |
+| *Is flash memory considered RAM?* | No. Flash is a type of ROM—non‑volatile storage, albeit with write‑capabilities. |
+| *Why is RAM called “random‑access”?* | Because any memory cell can be accessed directly without having to read through preceding cells, unlike magnetic tape. |
+| *How does the CPU decide what to put in RAM?* | The operating system’s memory manager loads code and data from disk into RAM on demand (“paging” or “swapping”). |
+| *Can I upgrade my ROM?* | In many modern devices, firmware updates are performed over the air (OTA) or via a USB port, rewriting the flash memory. |
+
+---
+
+### Bottom line
+
+- **RAM**: Fast, temporary, volatile memory used for active data and instructions during program execution.
+- **ROM**: Slow (or read‑only), permanent memory that stores firmware, boot code, and other data that must survive power loss.
+
+Understanding this distinction is key to grasping how computers boot, run applications, and keep data safe.",1.6
+"If a train travels 60 km in 2 hours, what is its average speed?","Average speed is simply the total distance covered divided by the total time taken.
+
+\[
+\text{Average speed} = \frac{\text{Distance}}{\text{Time}}
+\]
+
+Given:
+- Distance = 60 km  
+- Time = 2 hours
+
+\[
+\text{Average speed} = \frac{60\ \text{km}}{2\ \text{h}} = 30\ \text{km/h}
+\]
+
+So the train’s average speed is **30 km per hour**.",0.48
+Summarize the importance of teamwork in a workplace.,"**Teamwork in the Workplace – Key Takeaways**
+
+- **Higher Productivity & Efficiency**  
+  Collaborative teams pool skills and resources, enabling faster completion of tasks and more accurate outcomes than individuals working in isolation.
+
+- **Enhanced Creativity & Problem‑Solving**  
+  Diverse viewpoints spark innovation and help generate solutions that a single mind might miss, turning challenges into opportunities.
+
+- **Improved Employee Engagement & Retention**  
+  Working together builds camaraderie and a sense of belonging, boosting motivation and reducing turnover.
+
+- **Learning & Skill Development**  
+  Team members teach one another, fostering continuous growth and adaptability across the organization.
+
+- **Resilience & Risk Management**  
+  When one member faces setbacks, teammates can redistribute workload and support each other, ensuring projects stay on track.
+
+In short, teamwork turns isolated efforts into a unified force, driving performance, morale, and long‑term success.",2.01
+What are the main advantages of using cloud computing?,"### Key Advantages of Cloud Computing
+
+| # | Advantage | Why It Matters | Practical Impact |
+|---|-----------|----------------|------------------|
+| 1 | **Elastic Scalability** | Resources can grow or shrink on demand. | • Handle traffic spikes (e‑commerce, gaming). <br>• Avoid over‑provisioning during low‑usage periods. |
+| 2 | **Cost Efficiency** | Pay‑as‑you‑go pricing, reduced CAPEX → OPEX. | • No need to purchase servers, storage, or networking gear.<br>• Lower maintenance and upgrade costs. |
+| 3 | **Rapid Deployment & Agility** | Instantly spin up environments, deploy code, run workloads. | • Shorten release cycles (CI/CD pipelines). <br>• Quickly prototype and test new products. |
+| 4 | **Global Reach & Accessibility** | Data centers in many regions, HTTPS, CDN integration. | • Serve users worldwide with low latency.<br>• Enable remote/remote‑work teams. |
+| 5 | **High Availability & Reliability** | Built‑in redundancy, failover, and SLAs. | • 99.95%+ uptime guarantees.<br>• Automatic backup and snapshotting. |
+| 6 | **Security & Compliance** | Managed security controls, certifications (ISO, SOC, GDPR). | • Offload patching, intrusion detection, and data protection to experts.<br>• Meet industry regulatory requirements. |
+| 7 | **Disaster Recovery & Business Continuity** | Automated backups, multi‑region replication. | • Recover quickly from outages or data loss. <br>• Avoid costly downtime. |
+| 8 | **Managed Services & Automation** | Managed databases, Kubernetes, AI/ML, serverless functions. | • Reduce operational overhead.<br>• Focus on business logic instead of infrastructure. |
+| 9 | **Innovation & Access to Cutting‑Edge Tech** | Instant access to GPUs, ML frameworks, quantum computing APIs. | • Experiment with AI/ML without large upfront investments. |
+| 10 | **Environmentally Friendly** | Shared resources → lower carbon footprint per workload. | • Smaller data center footprint per user. |
+| 11 | **Vendor Ecosystem & Integration** | Rich marketplaces, APIs, and third‑party tools. | • Plug‑and‑play add‑ons, data connectors, analytics services. |
+
+---
+
+#### Quick Take‑away
+Cloud computing turns **infrastructure into a utility**—you pay for what you use, scale instantly, and rely on a managed platform that handles uptime, security, and compliance. This lets businesses focus on product innovation, faster time‑to‑market, and delivering global services with minimal operational overhead.",1.07
+Write a Python function to check whether a number is even or odd.,"Here’s a compact, well‑documented Python function that tells you whether an integer is even or odd.  
+It accepts only integers (raising an informative error for other types) and returns a Boolean value (`True` if the number is even, `False` otherwise).  
+Feel free to tweak the return type or add extra formatting (e.g., printing “even/odd”) as your project requires.
+
+```python
+def is_even(n: int) -> bool:
+    """"""
+    Determine if the given number is even.
+
+    Parameters
+    ----------
+    n : int
+        The integer to check.
+
+    Returns
+    -------
+    bool
+        True if n is even, False if n is odd.
+
+    Raises
+    ------
+    TypeError
+        If the argument is not an integer.
+
+    Examples
+    --------
+    >>> is_even(10)
+    True
+    >>> is_even(7)
+    False
+    >>> is_even(-4)
+    True
+    """"""
+    if not isinstance(n, int):
+        raise TypeError(f""Expected an integer, got {type(n).__name__}"")
+
+    return n % 2 == 0
+```
+
+### Quick usage
+
+```python
+for number in [0, 1, 2, 3, -4, -5]:
+    print(f""{number} is even? {is_even(number)}"")
+```
+
+Output:
+
+```
+0 is even? True
+1 is even? False
+2 is even? True
+3 is even? False
+-4 is even? True
+-5 is even? False
+```
+
+---
+
+#### Want a function that returns the string “even” or “odd” instead?
+
+```python
+def even_or_odd(n: int) -> str:
+    if not isinstance(n, int):
+        raise TypeError(f""Expected an integer, got {type(n).__name__}"")
+
+    return ""even"" if n % 2 == 0 else ""odd""
+```
+
+```python
+print(even_or_odd(7))   # prints ""odd""
+print(even_or_odd(8))   # prints ""even""
+```
+
+Both functions are small, type‑safe, and ready to drop into any codebase. Happy coding!",1.05
+What is the largest planet in our solar system?,"The largest planet in our solar system is **Jupiter**. It has the greatest diameter (about 142,000 km) and the greatest mass (roughly one‑tenth of the Sun's mass).",0.24
